@@ -1,0 +1,32 @@
+.jumbotron {
+    background-color: white;
+    border-style:solid;
+    border-width: 1px;
+    border-color: darkgreen;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+}
+.fa-search {
+    color: green;
+    padding-top: 10px;
+    font-size: 32px;
+}
+#box {
+    border-radius: 25px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px gray;
+}
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
