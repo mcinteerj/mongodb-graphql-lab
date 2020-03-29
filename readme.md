@@ -41,21 +41,21 @@ You are going to be deploying a web application which lists information about a 
 To complete the lab, step into each of the guides described below in the order set out. 
 
 ## 1. Getting Started with MongoDB Atlas
-**Guide:** [Set up your MongoDB Atlas Cluster](docs/01-mongodb-atlas.md)
-
 Follow the documentation linked above to **deploy a MongoDB cluster** on MongoDB Atlas and load it with sample data. In particular, you will load a collection called `sample_mflix` which contains data regarding several thousand movies. 
 
-## 2. Create your MongoDB Stitch Application and Configure GraphQL
-**Guide:** [Configure MongoDB Stitch for GraphQL](docs/02-mongodb-stitch-graphql.md)
+**Guide 1:** [Set up your MongoDB Atlas Cluster](docs/01-mongodb-atlas.md)
 
+## 2. Create your MongoDB Stitch Application and Configure GraphQL
 In this section you will create a MongoDB Stitch application, before generating a GraphQL schema in order to **expose data through the GraphQL endpoint**. At the end of this section you will be able to access the data stored in your MongoDB Cluster (created in Step 1) through a hosted GraphQL endpoint.
 
-## 3. Build and Host your simple Web Application on MongoDB Stitch
-**Guide:** [Deploy Sample Code](docs/03-deploy-sample.md)
+**Guide 2:** [Configure MongoDB Stitch for GraphQL](docs/02-mongodb-stitch-graphql.md)
 
+## 3. Build and Host your simple Web Application on MongoDB Stitch
 In this section, you will deploy/host a simple web application on MongoDB Stitch. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles). 
 
 These files **create a simple website which shows a list of movies** (including some detailed movie information) which is retrieved through the GraphQL endpoint you deployed in step 2. 
+
+**Guide 3:** [Deploy Sample Code](docs/03-deploy-sample.md)
 
 ## 4. The Requirements Changed!
 Your Product Owner just walked over to your desk and mentioned that they were getting a lot of feedback from users that it would be really useful to have the movie rating on the site so they can determine which movies are suitable for their kids to watch. **They want you to add the `rated` field that's in the database to the front-end**. 
@@ -68,7 +68,7 @@ If you're comfortable reading a javascript file, open the `app.js` file you down
 
 If you're not so confident and want to follow a guide for this step as well you'll find it here: 
 
-**Guide:** [Change the front-end](docs/04-changing-requirements.md)
+**Guide 4:** [Change the front-end](docs/04-changing-requirements.md)
 
 ## List of Guides
 All of the following links are also described above in each step, they are included here as a summary of the subpages in this repo:

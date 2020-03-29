@@ -40,4 +40,6 @@ Return to the home of this repository [here](../readme.md).
 
 > <img src="../images/01-mongodb-atlas/atlas-9.png" height="400">
 
-Congratulations - you've set-up your first Atlas Cluster and loaded it with sample data! Time to move onto the next step - [set up your first Stitch application and configure GraphQL](./02-mongodb-stitch-graphql.md).
+**Congratulations** - you've set-up your first Atlas Cluster and loaded it with sample data! 
+
+Return back to the [home page](../readme.md) to proceed to the next step (you can proceed while the sample dataset is still loading).
