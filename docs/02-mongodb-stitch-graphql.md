@@ -59,7 +59,7 @@ Notice also that MongoDB Stitch has also automatically generated documentation o
 
 Feel free to run a few queries to get used to the way GraphQL is structured. Here's a few examples:
 
-```
+```json
 query {
   movie {
 	title
@@ -69,7 +69,7 @@ query {
 }
 ```
 or to retrieve multiple movies, use this:
-```
+```json
 query {
   movies {
 	title
