@@ -1,7 +1,2 @@
-/.DS_Store
-/docs/.DS_Store
-/docs/images/.DS_Store
-/docs/images/01-mongodb-atlas/.DS_Store
-/docs/images/02-mongodb-stitch-graphql/.DS_Store
-/docs/images/03-deploy-sample/.DS_Store
-/docs/images/04-changing-requirements/.DS_Store
+.DS_Store
+.DS_Store?
