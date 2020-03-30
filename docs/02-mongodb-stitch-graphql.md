@@ -72,7 +72,7 @@ or to retrieve multiple movies, use this:
 ```graphql
 query {
   movies {
-	title
+    title
     year
     fullplot
   }
@@ -80,6 +80,7 @@ query {
 ```
 The queries you are running are available over the internet at the GraphQL Endpoint at the top of the page. 
 
+---
 **Congratulations** - you've created your first GraphQL endpoint on MongoDB Stitch!
 
 As an optional step, if you were interested, you could use an API client like [Postman](https://www.postman.com/product/api-client) or [Insomnia](https://insomnia.rest/) to hit the same endpoints or of course call them directly from an application your building. Just make sure to get retrieve an access token first - see our docs [here](https://docs.mongodb.com/stitch/graphql/authenticate-graphql-requests/#get-a-client-api-access-token) for more details. 

@@ -1,14 +1,23 @@
 <!doctype html>
 <html>
     <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="./index.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/e1f93e03c9.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.6.0/stitch.js"></script>
-    <title>MongoDB - GraphQL</title>
+        <!-- Import Styles from external files -->
+        <link href="./index.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Import Font from external site -->
+        <script src="https://kit.fontawesome.com/e1f93e03c9.js"></script>
+
+        <!-- Import JavaScript file from external site -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.6.0/stitch.js"></script>
+        
+        <!-- Set Page Title (Seen in Tab) -->
+        <title>MongoDB - GraphQL</title>
     </head>
+
     <body>
+        <!-- Create Header Box with Text-->
         <div class="container">
             <header class="jumbotron">
                 <div class="row">
@@ -21,12 +30,16 @@
                     <br>
                 </div>
             </header>
-    
+            
+            <!-- Create empty results section to be populated through JavaScript-->
             <div>
                 <p id="results" style="font-size: 1em"></p>
             </div>
     
         </div>
+
+        <!-- Import/Run the JavaScript -->
         <script src="./app.js"></script>
     </body>
+    
 </html>
