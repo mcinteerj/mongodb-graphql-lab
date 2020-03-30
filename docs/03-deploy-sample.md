@@ -41,16 +41,51 @@ This file ([index.css](../sampleFiles/index.css)) is a simple style sheet which 
 4. Update the Stitch IDs
 
 # Updating and Hosting the Web Application
-Download all three files to your desktop;
+## Downloading the Sample Files
+Download all three files to your desktop:
 - [index.html](../sampleFiles/index.html)
 - [app.js](../sampleFiles/app.js)
 - [index.css](../sampleFiles/index.css)
 
+***Note:** To download the files, click on each of the links above, then click **Raw**, then go to `File > Save Page As`.*
 
+***IMPORTANT:** Make sure you add the file type to each file (e.g. by adding `.html`, `.css` or `.app.js` to the end of each file name before you save it)*
 
-1. Deploy the files
-2. Access via Web (may need to refresh, some kind of auth issue)
-3. Note about flushing cache
+## Updating your app_id
+The app_id in the `app.js` file currently has a placeholder, but this needs to be updated with your Stitch App ID in order to have it use the GraphQL endpoint you created earlier. 
+
+Open your browser to MongoDB Stitch again, see in the top left hand area a box called `APP ID`. Copy this value.
+> <img src="./images/03-deploy-sample/deploy-1.png" height="300">
+
+Now we need to add the ID to your JavaScript app. Open the `app.js` file using a text editor, and update the second line. It should look like this (but with your application id):
+```javascript
+const app_id = 'movies-graphql-sdfae';
+```
+***Note:** The id is a combination of the application name you defined earlier, and a unique string, so if you didn't use the applicatino name `movies-graphql` then that won't be part of your App ID.*
+
+## Hosting your Web Application on Stitch
+Now we need to host this web application on Stitch so that it's accesible over the internet. Return to Stitch in your browser and complete the following steps.
+
+Navigate to `Hosting` in the left-hand menu and then click `Enable Hosting`
+> <img src="./images/03-deploy-sample/deploy-2.png" width="500">
+
+Upload the three files (`index.html`, `app.js` and `index.css`) by either dragging and dropping them, or by selecting "Upload Files". 
+
+***Note:** You will need to accept a dialog about overwriting the `index.html` file as one is automatically generated when you enabled hosting.*
+> <img src="./images/03-deploy-sample/deploy-3.png" width="500">
+
+Click `Review & Deploy Changes` then click `Deploy` in order to deploy the changes you've made.
+> <img src="./images/03-deploy-sample/deploy-4.png" height="180">
+
+We need to make sure that the new files are propagated through the Content Delivery Network, so make sure to click `Flush Delivery CDN` (you should do this whenever you update files and want them to immediately be updated for downstream users).
+> <img src="./images/03-deploy-sample/deploy-5.png" height="300">
+
+Nice! Your Web Application has been deployed. Navigate to the URL shown on the hosting page to see you App!
+> <img src="./images/03-deploy-sample/deploy-6.png" height="100">
+
+You should see a page that looks a bit like this:
+> <img src="./images/03-deploy-sample/deploy-7.png" height="400">
+If you don't then it might be worth opening up developer tools in your browser to see what errors are being logged.
 
 ---
 **Congratulations** - you've deployed your first Web App to MongoDB Stitch, leveraging the GraphQL endpoint you created earlier. 

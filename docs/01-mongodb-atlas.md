@@ -4,41 +4,41 @@ Return to the home of this repository [here](../readme.md).
 
 * Create a free account on MongoDB Atlas at [cloud.mongodb.com](https://cloud.mongodb.com). Click on “Get Started Free”  if you do not have an account or “Sign In” if you already have a login. Then create your account/sign in as required.
 
-> ![](../images/01-mongodb-atlas/atlas-1.png)
+> <img src="./images/01-mongodb-atlas/atlas-1.png" height="300">
 
 * Under the 'Starter Clusters' box (left-hand side), click 'Create a cluster'
 
-> <img src="../images/01-mongodb-atlas/atlas-2.png" height="500">
+> <img src="./images/01-mongodb-atlas/atlas-2.png" height="400">
 
 * Select AWS as the Cloud Provider and then Ireland as the region
 
->![](../images/01-mongodb-atlas/atlas-3.png)
+> <img src="./images/01-mongodb-atlas/atlas-3.png" height="350">
 
 * Confirm the the 'M0 Sandbox' Cluster Tier is selected, then click create cluster
 
->![](../images/01-mongodb-atlas/atlas-4.png)
+> <img src="./images/01-mongodb-atlas/atlas-4.png" height="350">
 
 * While this spins up, lets click on the “Database Access” submenu, under “Security” on the left menu, then 'Add New User'.
 
-> <img src="../images/01-mongodb-atlas/atlas-5.png" height="400">
+> <img src="./images/01-mongodb-atlas/atlas-5.png" height="400">
 
-* Enter a user name. For our demo, let’s enter `mdbadmin` and enter a secure password.  Record your user name and password in a safe location for reference later. Under “User Privileges”, select “Atlas admin” and click on the “Add User button to complete this section.
+* Enter a user name. For this lab, let’s enter `mdbadmin` and enter a secure password.  Record your user name and password in a safe location for reference later. Under “User Privileges”, select “Atlas admin” and click on the “Add User button to complete this section.
 
->![](../images/01-mongodb-atlas/atlas-6.png)
+> <img src="./images/01-mongodb-atlas/atlas-6.png" height="400">
 
 * Lets click on the “Network Access” submenu, under “Security” on the left menu. Click on “Add IP Address”.
 
->![](../images/01-mongodb-atlas/atlas-7.png)
+> <img src="./images/01-mongodb-atlas/atlas-7.png" height="300">
 
 * Select “Allow Access from Anywhere” for the purpose of this demo, select "Save as temporary whitelist" and click on “Confirm”.  
 
 *Note*:  When running a cluster in production, you will want to narrow the scope of where your database can be accessed and specify a specific IP address/CIDR block and/or using VPC peered connection. For this demo we are creating a temporary whitelist entry which will automatically be removed after the specified period of time, preventing general access to the cluster.
 
->![](../images/01-mongodb-atlas/atlas-8.png)
+> <img src="./images/01-mongodb-atlas/atlas-8.png" height="300">
 
 * Go to “Clusters” submenu, under “Atlas” on the left menu, then click "..." for your cluster, select "Load Sample Dataset".
 
-> <img src="../images/01-mongodb-atlas/atlas-9.png" height="400">
+> <img src="./images/01-mongodb-atlas/atlas-9.png" height="400">
 
 ---
 **Congratulations** - you've set-up your first Atlas Cluster and loaded it with sample data! 
