@@ -14,7 +14,12 @@ Fill in the necessary fields to create the application, specifically;
 * Click 'Create'
 > <img src="./images/02-mongodb-stitch-graphql/stitch-3.png" height="500">
 
-Once the application has been created, we need to enable anonymous access to it. This doesn't mean people can access your data without authentication, but it does mean that anyone can authenticate - so when chosing this option you should assume any data you're hosting will be available publicly.
+Once the application has been created, we need to 'Enable Hosting' as we intend to host a web application here (in the next section).
+
+Navigate to `Hosting` in the left-hand menu and then click `Enable Hosting`
+> <img src="./images/02-mongodb-stitch-graphql/stitch-0.png" width="500">
+
+As the data will be accessed by anonymous users on the internet, we also need to enable anonymous access to our data set. This *doesn't* mean people can access your data without authentication, but it does mean that anyone can authenticate - so when chosing this option you should assume any data you're hosting will be available publicly.
 
 Select `Users` in the left hand menu, then click through to the `Providers` tab and click to `Edit` the "Allow users to log in anonymously" provider. 
 > <img src="./images/02-mongodb-stitch-graphql/stitch-4.png" height="200">
@@ -83,6 +88,6 @@ The queries you are running are available over the internet at the GraphQL Endpo
 ---
 **Congratulations** - you've created your first GraphQL endpoint on MongoDB Stitch!
 
-As an optional step, if you were interested, you could use an API client like [Postman](https://www.postman.com/product/api-client) or [Insomnia](https://insomnia.rest/) to hit the same endpoints or of course call them directly from an application your building. Just make sure to get retrieve an access token first - see our docs [here](https://docs.mongodb.com/stitch/graphql/authenticate-graphql-requests/#get-a-client-api-access-token) for more details. 
+As an optional step, if you were interested, you could use an API client like [Postman](https://www.postman.com/product/api-client) or [Insomnia](https://insomnia.rest/) to hit the same endpoints or of course call them directly from an application your building. Just make sure to retrieve an access token first - see our docs [here](https://docs.mongodb.com/stitch/graphql/authenticate-graphql-requests/#get-a-client-api-access-token) for more details. 
 
 Return back to the [home page](../readme.md) to proceed to the next step.
