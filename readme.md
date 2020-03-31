@@ -1,5 +1,5 @@
 # MongoDB GraphQL Lab
-**Time to Complete:** 60 minutes
+**Time to Complete:** 45 minutes
 
 This is a tutorial on how to use [MongoDB Atlas](https://cloud.mongodb.com) and [MongoDB Stitch](https://www.mongodb.com/cloud/stitch) to create a flexible GraphQL API. 
 
@@ -46,6 +46,10 @@ To complete the lab, step into each of the guides described below in the order s
 Follow the documentation linked below to **deploy a MongoDB cluster** on MongoDB Atlas and load it with sample data. In particular, you will load a collection called `sample_mflix` which contains data regarding several thousand movies. 
 
 **Guide 1:** [Set up your MongoDB Atlas Cluster](docs/01-mongodb-atlas.md)
+
+If you aren't familiar with how data is stored in MongoDB and/or how to query it, it's probably worth also taking the time to explore the sample dataset using MongoDB Compass. This is not required in order to complete the rest of the lab. 
+
+**Guide 1-1:** [Explore the sample data with MongoDB Compass](docs/01-1-mongodb-compass.md) *(optional - additional 45 minutes)*
 
 ## 2. Create your MongoDB Stitch Application and Configure GraphQL
 In this section you will create a MongoDB Stitch application, before generating a GraphQL schema in order to **expose data through the GraphQL endpoint**. At the end of this section you will be able to access the data stored in your MongoDB Cluster (created in Step 1) through a hosted GraphQL endpoint.

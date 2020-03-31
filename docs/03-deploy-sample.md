@@ -40,19 +40,20 @@ This file ([index.css](../sampleFiles/index.css)) is a simple style sheet which 
 3. Explain the Javascript structure
 4. Update the Stitch IDs
 
+
 # Updating and Hosting the Web Application
-## Downloading the Sample Files
-Download all three files to your desktop:
+## Downloading and Extract the Sample Files
+This repository has three sample files:
 - [index.html](../sampleFiles/index.html)
 - [app.js](../sampleFiles/app.js)
 - [index.css](../sampleFiles/index.css)
 
-***Note:** To download the files, click on each of the links above, then click **Raw**, then go to `File > Save Page As`.*
-
-***IMPORTANT:** Make sure you add the file type to each file (e.g. by adding `.html`, `.css` or `.app.js` to the end of each file name before you save it)*
+You need to download each of these files, which can be achieved by either;
+* Cloning this repository (if you're familiar with Git)
+* Downloading and extracting a zip file hosted on Google Drive: [mongodb-graphql-lab-samplefiles.zip](https://drive.google.com/file/d/1CzKfHdR0rwH1PO8jHKppQhDMaLTHgJC-/view?usp=sharing) (the download button is in the top right)
 
 ## Updating your app_id
-The app_id in the `app.js` file currently has a placeholder, but this needs to be updated with your Stitch App ID in order to have it use the GraphQL endpoint you created earlier. 
+The app_id in the `app.js` file currently has a placeholder value, but this needs to be updated with your Stitch App ID in order to have it use the GraphQL endpoint you created earlier. 
 
 Open your browser to MongoDB Stitch again, see in the top left hand area a box called `APP ID`. Copy this value.
 > <img src="./images/03-deploy-sample/deploy-1.png" height="300">
