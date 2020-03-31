@@ -35,12 +35,6 @@ This file ([app.js](../sampleFiles/app.js)) is the JavaScript file which is refe
 ## index.css
 This file ([index.css](../sampleFiles/index.css)) is a simple style sheet which defines some styles which make the webpage look a little more pleasing to the eye. It doesn't functionally affect the web application - just the way it looks.
 
-1. Introduce the sample files
-2. Explain the HTML structure
-3. Explain the Javascript structure
-4. Update the Stitch IDs
-
-
 # Updating and Hosting the Web Application
 ## Downloading and Extract the Sample Files
 This repository has three sample files:

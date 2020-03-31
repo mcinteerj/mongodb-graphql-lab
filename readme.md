@@ -33,7 +33,7 @@ As the pace of change in technology has increased, so too has the pace of change
 
 In this lab, you will deploy a MongoDB Cluster on MongoDB Atlas, before loading it with some sample data. You will then expose this data via a GraphQL API endpoint, and deploy a *very* simple web application to expose this data to users on the internet.
 
-Once the application is live, the requirements will change - your business owner wants an additional field to be shown on the web application! Because you have exposed the data via a GraphQL endpoint, this will be easy to adapt and change, without having to make changes to you back-end API. 
+Once the application is live, the requirements will change - your Product Owner wants an additional field to be shown on the web application! Because you have exposed the data via a GraphQL endpoint, this will be easy to adapt and change, without having to make changes to you back-end API. 
 
 This will demonstrate the flexibility of using GraphQL to expose data to other systems, while also showing you how quickly and easily you are able to deliver new services using MongoDB Atlas and MongoDB Stitch.
 
@@ -57,7 +57,7 @@ In this section you will create a MongoDB Stitch application, before generating 
 **Guide 2:** [Configure MongoDB Stitch for GraphQL](docs/02-mongodb-stitch-graphql.md)
 
 ## 3. Build and Host your simple Web Application on MongoDB Stitch
-In this section, you will deploy/host a simple web application on MongoDB Stitch. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles). 
+In this section, you will deploy/host a simple web application on MongoDB Stitch. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles) or as a Zip file on [Google Drive](https://drive.google.com/file/d/1CzKfHdR0rwH1PO8jHKppQhDMaLTHgJC-/view?usp=sharing). 
 
 These files **create a simple website which shows a list of movies** (including some detailed movie information) which is retrieved through the GraphQL endpoint you deployed in step 2. 
 
