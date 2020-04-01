@@ -92,10 +92,20 @@ All of the following links are also described above in each step, they are inclu
 5. Create a mechanism to page through results on the web page (currently it just returns the first 100 movies)
 6. Allow people to edit each movie record and use GraphQL to write this data back to MongoDB
 
-# Resources (TO BE UPDATED)
-Links to docs including:
-* Other MongoDB/GraphQL material
-* MongoDB Atlas Docs
-* MongoDB Stitch Docs
-* MongoDB Stitch GraphQL Docs
-* GraphQL Docs
+# Resources
+The following links are to external pages which contain further reading and resources for some of the key topics covered in this lab:
+
+## Additional Hands-on Exercises
+* [Introduction to GraphQL on MongoDB Atlas and MongoDB Stitch](https://developer.mongodb.com/how-to/graphql-support-atlas-stitch)
+* [Build a simple To-Do app using MongoDB Stitch and GraphQL](https://github.com/mongodb-appeng/taskit)
+* [Build a simple image posting app using MongoDB Stitch and GraphQL](https://github.com/JoeKarlsson/mongodb-graphql-demo)
+
+## MongoDB Docs
+* [MongoDB Atlas](https://docs.atlas.mongodb.com/)
+* [MongoDB Stitch](https://docs.mongodb.com/stitch/)
+* [GraphQL on MongoDB Stitch](https://docs.mongodb.com/stitch/graphql/)
+
+## GraphQL Docs
+* [GraphQL Spec](http://spec.graphql.org/)
+* [Learn GraphQL](https://graphql.org/learn/)
+
