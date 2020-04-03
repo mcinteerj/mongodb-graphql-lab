@@ -99,6 +99,7 @@ The following links are to external pages which contain further reading and reso
 * [Introduction to GraphQL on MongoDB Atlas and MongoDB Stitch](https://developer.mongodb.com/how-to/graphql-support-atlas-stitch)
 * [Build a simple To-Do app using MongoDB Stitch and GraphQL](https://github.com/mongodb-appeng/taskit)
 * [Build a simple image posting app using MongoDB Stitch and GraphQL](https://github.com/JoeKarlsson/mongodb-graphql-demo)
+    * [Joe Karlsson explaining GraphQL and this app in particular](https://www.youtube.com/watch?v=XsD2ZKqMbgo)
 
 ## MongoDB Docs
 * [MongoDB Atlas](https://docs.atlas.mongodb.com/)
