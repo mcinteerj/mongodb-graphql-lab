@@ -91,6 +91,7 @@ All of the following links are also described above in each step, they are inclu
 4. Add movie image/poster to each of the listed movies
 5. Create a mechanism to page through results on the web page (currently it just returns the first 100 movies)
 6. Allow people to edit each movie record and use GraphQL to write this data back to MongoDB
+7. Incorporate comments from the comments collection by creating a relationship in the GraphQL schema
 
 # Resources
 The following links are to external pages which contain further reading and resources for some of the key topics covered in this lab:
