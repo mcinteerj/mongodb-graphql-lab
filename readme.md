@@ -111,3 +111,5 @@ The following links are to external pages which contain further reading and reso
 * [GraphQL Spec](http://spec.graphql.org/)
 * [Learn GraphQL](https://graphql.org/learn/)
 
+## Podcasts
+* [The MongoDB Podcast - Episode 2 - Developing with GraphQL and MongoDB](https://www.youtube.com/watch?v=chL4FqQlMaY&list=PL4RCxklHWZ9sK3K2dsucbyg8hWO0OLiPu&index=3)
