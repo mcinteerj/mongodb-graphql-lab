@@ -1,7 +1,7 @@
 Return to the home of this repository [here](../readme.md).
 
 # Explanation of Sample Files
-In this section, we will deploy a simple web application to Stitch using the Stitch Hosting feature. The web application is made up of three files; `index.html`, `index.css` and `app.js`. The sample files are provided in the [sampleFiles folder](./sampleFiles). 
+In this section, we will deploy a simple web application to Stitch using the Stitch Hosting feature. The web application is made up of three files; `index.html`, `index.css` and `app.js`. The sample files are provided in the [sampleFiles folder](../sampleFiles). 
 
 
 ## index.html
