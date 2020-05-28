@@ -27,13 +27,13 @@ query {
 Once that's done, you just need to upload the `app.js` file to Stitch again. You can do this by either dragging and dropping it, or by selecting "Upload Files". 
 
 ***Note:** You will need to accept a dialog about overwriting the file as you are replacing the one you uploaded previously.*
-> <img src="./images/04-changing-requirements/change-1.png" width="500">
+> <img src="./images/04-changing-requirements/change-1.png" height="350">
 
 Click `Review & Deploy Changes` then click `Deploy` in order to deploy the changes you've made.
-> <img src="./images/04-changing-requirements/change-2.png" height="180">
+> <img src="./images/04-changing-requirements/change-2.png" height="250">
 
 We need to make sure that the new files are propagated through the Content Delivery Network, so make sure to click `Flush Delivery CDN` (you should do this whenever you update files and want them to immediately be updated for downstream users).
-> <img src="./images/04-changing-requirements/change-3.png" height="300">
+> <img src="./images/04-changing-requirements/change-3.png" height="350">
 
 You're app should now be updated, go refresh the page you opened earlier to see the changes. You should now see a page that looks a bit like this:
 > <img src="./images/04-changing-requirements/change-4.png" height="400">

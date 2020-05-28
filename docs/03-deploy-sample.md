@@ -63,21 +63,21 @@ Now we need to host this web application on Stitch so that it's accesible over t
 
 Navigate back to the Hosting section by clicking `Hosting` in the left hand navigation menu.
 
-> <img src="./images/03-deploy-sample/deploy-2.png" height="350">
+> <img src="./images/03-deploy-sample/deploy-2.png" height="450">
 
 Upload the three files (`index.html`, `app.js` and `index.css`) by either dragging and dropping them, or by selecting "Upload Files". 
 
 ***Note:** You will need to accept a dialog about overwriting the `index.html` file as one is automatically generated when you enabled hosting.*
-> <img src="./images/03-deploy-sample/deploy-3.png" width="500">
+> <img src="./images/03-deploy-sample/deploy-3.png" height="400">
 
 Click `Review & Deploy Changes` then click `Deploy` in order to deploy the changes you've made.
-> <img src="./images/03-deploy-sample/deploy-4.png" height="180">
+> <img src="./images/03-deploy-sample/deploy-4.png" height="270">
 
 We need to make sure that the new files are propagated through the Content Delivery Network, so make sure to click `Flush Delivery CDN` (you should do this whenever you *update* files and want them to immediately be updated for downstream users).
 > <img src="./images/03-deploy-sample/deploy-5.png" height="300">
 
 Nice! Your Web Application has been deployed. Navigate to the URL shown on the hosting page to see you App!
-> <img src="./images/03-deploy-sample/deploy-6.png" height="100">
+> <img src="./images/03-deploy-sample/deploy-6.png" height="130">
 
 You should see a page that looks a bit like this:
 > <img src="./images/03-deploy-sample/deploy-7.png" height="400">
