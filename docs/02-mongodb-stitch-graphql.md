@@ -1,7 +1,7 @@
 Return to the home of this repository [here](../readme.md).
 
-# MongoDB Stitch Setup
-Click Stitch in the left-hand navigation panel (under "Services)
+# MongoDB Realm Setup
+Click Realm in the left-hand navigation panel (under "Services)
 > <img src="./images/02-mongodb-stitch-graphql/stitch-1.png" height="450">
 
 Click to create a new application
@@ -36,13 +36,13 @@ Select the `sample_mflix` database and the `movies` collection. Then in the "Per
 You'll notice a blue bar appear at the top of your window explaining that you have new changes that are yet to be deployed. Click `Review & Deploy Changes` then click `Deploy` in order to deploy the changes you've made.
 > <img src="./images/02-mongodb-stitch-graphql/stitch-8.png" height="250">
 
-Nice! Now you've created your first stitch app and configured it to allow anonymous users to read all data. Next we'll configure the GraphQL endpoint. 
+Nice! Now you've created your first Realm app and configured it to allow anonymous users to read all data. Next we'll configure the GraphQL endpoint. 
 
 # GraphQL Configuration
-The first thing we need to do is define a schema for GraphQL to use when reading the data. MongoDB Stitch can automatically generate a schema by sampling the dataset you loaded earlier. Click on the `Schema` tab, and then click `Generate Schema`.
+The first thing we need to do is define a schema for GraphQL to use when reading the data. MongoDB Realm can automatically generate a schema by sampling the dataset you loaded earlier. Click on the `Schema` tab, and then click `Generate Schema`.
 > <img src="./images/02-mongodb-stitch-graphql/graphql-1.png" height="250">
 
-Click `Generate Schema`. Stitch will sample 1,000 documents from the movies collection in order to generate a GraphQL Schema.
+Click `Generate Schema`. Realm will sample 1,000 documents from the movies collection in order to generate a GraphQL Schema.
 > <img src="./images/02-mongodb-stitch-graphql/graphql-2.png" height="300">
 
 Next, click `Save` in order to save the schema you have generated. 
@@ -51,15 +51,15 @@ Next, click `Save` in order to save the schema you have generated.
 The blue "Review and Deploy Changes" bar will appear again. Follow the steps from earlier to deploy the changes. 
 > <img src="./images/02-mongodb-stitch-graphql/stitch-8.png" height="250">
 
-Nice! Now you have deployed your first GraphQL endpoint on MongoDB Stitch. Let's see if we can access data through the endpoint. 
+Nice! Now you have deployed your first GraphQL endpoint on MongoDB Realm. Let's see if we can access data through the endpoint. 
 
-MongoDB Stitch has a built in browser based GUI for accessing data through GraphQL, the UI is called Graph*i*QL. Click `GraphQL` in the left hand menu to access this interface.
+MongoDB Realm has a built in browser based GUI for accessing data through GraphQL, the UI is called Graph*i*QL. Click `GraphQL` in the left hand menu to access this interface.
 > <img src="./images/02-mongodb-stitch-graphql/graphql-4.png" height="350">
 
 Scroll to the bottom of the left-hand pane and you'll see a query has been automatically generated based on the data. Click the Play button (triangle) to run the query.
 > <img src="./images/02-mongodb-stitch-graphql/graphql-5.gif">
 
-Notice also that MongoDB Stitch has also automatically generated documentation of the GraphQL endpoint on the right handside. This is interactive so you can click through to understand the different queries and data types available. 
+Notice also that MongoDB Realm has also automatically generated documentation of the GraphQL endpoint on the right handside. This is interactive so you can click through to understand the different queries and data types available. 
 > <img src="./images/02-mongodb-stitch-graphql/graphql-6.gif" height="400">
 
 Feel free to run a few queries to get used to the way GraphQL is structured. Here's a few examples:
@@ -86,9 +86,9 @@ query {
 The queries you are running are available over the internet at the GraphQL Endpoint at the top of the page. 
 
 ---
-**Congratulations** - you've created your first GraphQL endpoint on MongoDB Stitch!
+**Congratulations** - you've created your first GraphQL endpoint on MongoDB Realm!
 
-As an optional step, if you were interested, you could use an API client like [Postman](https://www.postman.com/product/api-client) or [Insomnia](https://insomnia.rest/) to hit the same endpoints or of course call them directly from an application your building. Just make sure to retrieve an access token first - see our docs [here](https://docs.mongodb.com/stitch/graphql/authenticate-graphql-requests/#get-a-client-api-access-token) for more details. 
+As an optional step, if you were interested, you could use an API client like [Postman](https://www.postman.com/product/api-client) or [Insomnia](https://insomnia.rest/) to hit the same endpoints or of course call them directly from an application your building. Just make sure to retrieve an access token first - see our docs [here](https://docs.mongodb.com/realm/reference/authenticate-http-client-requests#get-a-client-api-access-token) for more details. 
 
 Return back to the [home page](../readme.md) to proceed to the next step.
 

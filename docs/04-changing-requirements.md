@@ -24,7 +24,7 @@ query {
     }
 }
 ```
-Once that's done, you just need to upload the `app.js` file to Stitch again. You can do this by either dragging and dropping it, or by selecting "Upload Files". 
+Once that's done, you just need to upload the `app.js` file to Realm again. You can do this by either dragging and dropping it, or by selecting "Upload Files". 
 
 ***Note:** You will need to accept a dialog about overwriting the file as you are replacing the one you uploaded previously.*
 > <img src="./images/04-changing-requirements/change-1.png" height="350">
