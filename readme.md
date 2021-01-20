@@ -57,7 +57,7 @@ In this section you will create a MongoDB Realm application, before generating a
 **Guide 2:** [Configure MongoDB Realm for GraphQL](docs/02-mongodb-realm-graphql.md)
 
 ## 3. Build and Host your simple Web Application on MongoDB Realm
-In this section, you will deploy/host a simple web application on MongoDB Realm. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles) or as a Zip file on [Google Drive](https://drive.google.com/file/d/1CzKfHdR0rwH1PO8jHKppQhDMaLTHgJC-/view?usp=sharing). 
+In this section, you will deploy/host a simple web application on MongoDB Realm. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles) or as a Zip file on [Google Drive](https://drive.google.com/file/d/13RqMz7nm-vPVBSZqqDfpxCL3-c0C3aGE/view?usp=sharing). 
 
 These files **create a simple website which shows a list of movies** (including some detailed movie information) which is retrieved through the GraphQL endpoint you deployed in step 2. 
 
