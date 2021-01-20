@@ -54,7 +54,7 @@ If you aren't familiar with how data is stored in MongoDB and/or how to query it
 ## 2. Create your MongoDB Realm Application and Configure GraphQL
 In this section you will create a MongoDB Realm application, before generating a GraphQL schema in order to **expose data through the GraphQL endpoint**. At the end of this section you will be able to access the data stored in your MongoDB Cluster (created in Step 1) through a hosted GraphQL endpoint.
 
-**Guide 2:** [Configure MongoDB Realm for GraphQL](docs/02-mongodb-stitch-graphql.md)
+**Guide 2:** [Configure MongoDB Realm for GraphQL](docs/02-mongodb-realm-graphql.md)
 
 ## 3. Build and Host your simple Web Application on MongoDB Realm
 In this section, you will deploy/host a simple web application on MongoDB Realm. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles) or as a Zip file on [Google Drive](https://drive.google.com/file/d/1CzKfHdR0rwH1PO8jHKppQhDMaLTHgJC-/view?usp=sharing). 
@@ -80,7 +80,7 @@ If you're not so confident and want to follow a guide for this step as well you'
 All of the following links are also described above in each step, they are included here as a summary of the subpages in this repo:
 
 1. [Set up your MongoDB Atlas Cluster](docs/01-mongodb-atlas.md)
-2. [Configure MongoDB Realm for GraphQL](docs/02-mongodb-stitch-graphql.md)
+2. [Configure MongoDB Realm for GraphQL](docs/02-mongodb-realm-graphql.md)
 3. [Deploy Sample Code](docs/03-deploy-sample.md)
 4. [Change the front-end](docs/04-changing-requirements.md)
 
@@ -97,7 +97,7 @@ All of the following links are also described above in each step, they are inclu
 The following links are to external pages which contain further reading and resources for some of the key topics covered in this lab:
 
 ## Additional Hands-on Exercises
-* [Introduction to GraphQL on MongoDB Atlas and MongoDB Realm](https://developer.mongodb.com/how-to/graphql-support-atlas-stitch)
+* [Introduction to GraphQL on MongoDB Atlas and MongoDB Realm](https://developer.mongodb.com/how-to/graphql-support-atlas-realm)
 * [Build a simple To-Do app using MongoDB Realm and GraphQL](https://github.com/mongodb-appeng/taskit)
 * [Build a simple image posting app using MongoDB Realm and GraphQL](https://github.com/JoeKarlsson/mongodb-graphql-demo)
     * [Joe Karlsson explaining GraphQL and this app in particular](https://www.youtube.com/watch?v=XsD2ZKqMbgo)

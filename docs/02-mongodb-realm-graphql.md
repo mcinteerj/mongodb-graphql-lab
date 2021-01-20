@@ -2,65 +2,65 @@ Return to the home of this repository [here](../readme.md).
 
 # MongoDB Realm Setup
 Click Realm in the left-hand navigation panel (under "Services)
-> <img src="./images/02-mongodb-stitch-graphql/stitch-1.png" height="450">
+> <img src="./images/02-mongodb-realm-graphql/realm-1.png" height="450">
 
 Click to create a new application
-> <img src="./images/02-mongodb-stitch-graphql/stitch-2.png" height="200">
+> <img src="./images/02-mongodb-realm-graphql/realm-2.png" height="200">
 
 Fill in the necessary fields to create the application, specifically;
 * Application Name (you can chose, we used `movies-graphql`)
 * Select 'Local' deployment (this just means the application will be deployed in a single cloud region)
 * Select 'Ireland' (or whatever region you deployed your MongoDB Atlas cluster)
 * Click 'Create'
-> <img src="./images/02-mongodb-stitch-graphql/stitch-3.png" height="500">
+> <img src="./images/02-mongodb-realm-graphql/realm-3.png" height="500">
 
 Once the application has been created, we need to 'Enable Hosting' as we intend to host a web application here (in the next section).
 
 Navigate to `Hosting` in the left-hand menu and then click `Enable Hosting`
-> <img src="./images/02-mongodb-stitch-graphql/stitch-0.png" width="500">
+> <img src="./images/02-mongodb-realm-graphql/realm-0.png" width="500">
 
 As the data will be accessed by anonymous users on the internet, we also need to enable anonymous access to our data set. This *doesn't* mean people can access your data without authentication, but it does mean that anyone can authenticate - so when chosing this option you should assume any data you're hosting will be available publicly.
 
 Select `Users` in the left hand menu, then click through to the `Providers` tab and click to `Edit` the "Allow users to log in anonymously" provider. 
-> <img src="./images/02-mongodb-stitch-graphql/stitch-4.png" height="400">
+> <img src="./images/02-mongodb-realm-graphql/realm-4.png" height="400">
 
 Toggle the "Provider Enabled" option to `On` and click `Save`
-> <img src="./images/02-mongodb-stitch-graphql/stitch-5.png" height="250">
+> <img src="./images/02-mongodb-realm-graphql/realm-5.png" height="250">
 
 Next we need to define the default rules with which users can access the data. Click `Rules` in the left hand menu, then click `+ Add Collection`.
-> <img src="./images/02-mongodb-stitch-graphql/stitch-6.png" height="500">
+> <img src="./images/02-mongodb-realm-graphql/realm-6.png" height="500">
 
 Select the `sample_mflix` database and the `movies` collection. Then in the "Permissions Template" drop down, select `Users can only read all data`. This means that by default, all authenticated users will be able to read all data. 
-> <img src="./images/02-mongodb-stitch-graphql/stitch-7.png" height="400">
+> <img src="./images/02-mongodb-realm-graphql/realm-7.png" height="400">
 
 You'll notice a blue bar appear at the top of your window explaining that you have new changes that are yet to be deployed. Click `Review & Deploy Changes` then click `Deploy` in order to deploy the changes you've made.
-> <img src="./images/02-mongodb-stitch-graphql/stitch-8.png" height="250">
+> <img src="./images/02-mongodb-realm-graphql/realm-8.png" height="250">
 
 Nice! Now you've created your first Realm app and configured it to allow anonymous users to read all data. Next we'll configure the GraphQL endpoint. 
 
 # GraphQL Configuration
 The first thing we need to do is define a schema for GraphQL to use when reading the data. MongoDB Realm can automatically generate a schema by sampling the dataset you loaded earlier. Click on the `Schema` tab, and then click `Generate Schema`.
-> <img src="./images/02-mongodb-stitch-graphql/graphql-1.png" height="250">
+> <img src="./images/02-mongodb-realm-graphql/graphql-1.png" height="250">
 
 Click `Generate Schema`. Realm will sample 1,000 documents from the movies collection in order to generate a GraphQL Schema.
-> <img src="./images/02-mongodb-stitch-graphql/graphql-2.png" height="300">
+> <img src="./images/02-mongodb-realm-graphql/graphql-2.png" height="300">
 
 Next, click `Save` in order to save the schema you have generated. 
-> <img src="./images/02-mongodb-stitch-graphql/graphql-3.png" height="250">
+> <img src="./images/02-mongodb-realm-graphql/graphql-3.png" height="250">
 
 The blue "Review and Deploy Changes" bar will appear again. Follow the steps from earlier to deploy the changes. 
-> <img src="./images/02-mongodb-stitch-graphql/stitch-8.png" height="250">
+> <img src="./images/02-mongodb-realm-graphql/realm-8.png" height="250">
 
 Nice! Now you have deployed your first GraphQL endpoint on MongoDB Realm. Let's see if we can access data through the endpoint. 
 
 MongoDB Realm has a built in browser based GUI for accessing data through GraphQL, the UI is called Graph*i*QL. Click `GraphQL` in the left hand menu to access this interface.
-> <img src="./images/02-mongodb-stitch-graphql/graphql-4.png" height="350">
+> <img src="./images/02-mongodb-realm-graphql/graphql-4.png" height="350">
 
 Scroll to the bottom of the left-hand pane and you'll see a query has been automatically generated based on the data. Click the Play button (triangle) to run the query.
-> <img src="./images/02-mongodb-stitch-graphql/graphql-5.gif">
+> <img src="./images/02-mongodb-realm-graphql/graphql-5.gif">
 
 Notice also that MongoDB Realm has also automatically generated documentation of the GraphQL endpoint on the right handside. This is interactive so you can click through to understand the different queries and data types available. 
-> <img src="./images/02-mongodb-stitch-graphql/graphql-6.gif" height="400">
+> <img src="./images/02-mongodb-realm-graphql/graphql-6.gif" height="400">
 
 Feel free to run a few queries to get used to the way GraphQL is structured. Here's a few examples:
 
