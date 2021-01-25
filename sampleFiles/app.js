@@ -1,6 +1,5 @@
-// Define the Stitch client (YOU MUST UPDATE YOUR app_id)
-const app_id = '<YOUR-APP-ID-HERE>';
-const client = stitch.Stitch.initializeDefaultAppClient(app_id);
+// Define the Realm client (YOU MUST UPDATE YOUR app_id)
+const app_id = "<app_id>";
 
 /* 
     Define the GraphQL Query used to retrieve data (This is used by
@@ -22,25 +21,34 @@ query {
 // Call the getMovies() function to retrieve the movies and update the web page
 getMovies();
 
- 
+
 // Define the getMovies function
 async function getMovies() {
     try {
-        // Authenticate with MongoDB Stitch using Anonymous Credentials
-        const user = await client.auth.loginWithCredential(new stitch.AnonymousCredential());
+
+        /*
+            Authenticate GraphQL requests, this uses:
+                - The app_id defined at the beginning of the script
+            The result from the GraphQL authentication request will be stored in the 'anon_user' variable
+        */
+        const anon_user = await axios({
+            url: 'https://realm.mongodb.com/api/client/v2.0/app/' + app_id + '/auth/providers/anon-user/login',
+            method: 'post',
+        });
 
         /*
             Retrieve data from the GraphQL endpoint, this uses:
                 - The app_id defined at the beginning of the script
-                - The accessToken retrieved from the Anonymous Authentication
+                - The access_token retrieved from the Anonymous Authentication
                 - The query defined at the begnning of the script
             The result from the GraphQL query will be stored in the 'resp' variable
         */
         const resp = await axios({
-            url: 'https://stitch.mongodb.com/api/client/v2.0/app/' + app_id + '/graphql',
+            url: 'https://realm.mongodb.com/api/client/v2.0/app/' + app_id + '/graphql',
             method: 'post',
             headers: {
-                'Authorization': `Bearer ${user.auth.activeUserAuthInfo.accessToken}`
+                'Authorization': `Bearer ${anon_user.data.access_token}`,
+                'Content-Type': 'application/json'
             },
             data: {
                 query: gqlQuery,
@@ -86,7 +94,7 @@ function addToList(movie) {
     for (field in movie) {
         htmlStr += `<b>${field}:</b> ${movie[field]} <br />`
     }
-    
+
     // Add a horizontal rule at the end of the htmlStr for this movie
     htmlStr += `<hr />`;
 

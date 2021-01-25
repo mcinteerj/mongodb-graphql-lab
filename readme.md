@@ -1,9 +1,9 @@
 # MongoDB GraphQL Lab
 **Time to Complete:** 45 minutes
 
-This is a tutorial on how to use [MongoDB Atlas](https://cloud.mongodb.com) and [MongoDB Stitch](https://www.mongodb.com/cloud/stitch) to create a flexible GraphQL API. 
+This is a tutorial on how to use [MongoDB Atlas](https://cloud.mongodb.com) and [MongoDB Realm](https://www.mongodb.com/realm) to create a flexible GraphQL API. 
 
-Through this tutorial, you will see how GraphQL on MongoDB Stitch can be used to have a loose coupling between front-end applications and the back-end APIs they depend on - specifically, it will show how a front-end application is able to change and adapt with changing requirements without having depend on backend API changes. 
+Through this tutorial, you will see how GraphQL on MongoDB Realm can be used to have a loose coupling between front-end applications and the back-end APIs they depend on - specifically, it will show how a front-end application is able to change and adapt with changing requirements without having depend on backend API changes. 
 
 This tutorial is intended to be completed as part of a digital workshop run by [MongoDB](https://www.mongodb.com) however, it can also be completed on it's own using the resources described below.
 
@@ -19,7 +19,7 @@ This tutorial is set out in a way that most people with a hands-on technical bac
 
 The tutorial will introduce the following concepts, however no prior knowledge is assumed:
 * MongoDB Atlas
-* MongoDB Stitch
+* MongoDB Realm
 * GraphQL
 
 ## Software Requirements
@@ -35,10 +35,10 @@ In this lab, you will deploy a MongoDB Cluster on MongoDB Atlas, before loading 
 
 Once the application is live, the requirements will change - your Product Owner wants an additional field to be shown on the web application! Because you have exposed the data via a GraphQL endpoint, this will be easy to adapt and change, without having to make changes to you back-end API. 
 
-This will demonstrate the flexibility of using GraphQL to expose data to other systems, while also showing you how quickly and easily you are able to deliver new services using MongoDB Atlas and MongoDB Stitch.
+This will demonstrate the flexibility of using GraphQL to expose data to other systems, while also showing you how quickly and easily you are able to deliver new services using MongoDB Atlas and MongoDB Realm.
 
 # Detailed Steps
-You are going to be deploying a web application which lists information about a series of movies on a website. The data will be stored in a MongoDB Cluster hosted on Atlas, and will be accessed through a GraphQL endpointed deployed on MongoDB Stitch. The Web Application itself consists of a very simple set of HTMl/CSS/Javascript files which you will also host MongoDB Stitch. 
+You are going to be deploying a web application which lists information about a series of movies on a website. The data will be stored in a MongoDB Cluster hosted on Atlas, and will be accessed through a GraphQL endpointed deployed on MongoDB Realm. The Web Application itself consists of a very simple set of HTMl/CSS/Javascript files which you will also host MongoDB Realm. 
 
 To complete the lab, step into each of the guides described below in the order set out. 
 
@@ -51,13 +51,13 @@ If you aren't familiar with how data is stored in MongoDB and/or how to query it
 
 **Guide 1-1:** [Explore the sample data with MongoDB Compass](docs/01-1-mongodb-compass.md) *(optional - additional 45 minutes)*
 
-## 2. Create your MongoDB Stitch Application and Configure GraphQL
-In this section you will create a MongoDB Stitch application, before generating a GraphQL schema in order to **expose data through the GraphQL endpoint**. At the end of this section you will be able to access the data stored in your MongoDB Cluster (created in Step 1) through a hosted GraphQL endpoint.
+## 2. Create your MongoDB Realm Application and Configure GraphQL
+In this section you will create a MongoDB Realm application, before generating a GraphQL schema in order to **expose data through the GraphQL endpoint**. At the end of this section you will be able to access the data stored in your MongoDB Cluster (created in Step 1) through a hosted GraphQL endpoint.
 
-**Guide 2:** [Configure MongoDB Stitch for GraphQL](docs/02-mongodb-stitch-graphql.md)
+**Guide 2:** [Configure MongoDB Realm for GraphQL](docs/02-mongodb-realm-graphql.md)
 
-## 3. Build and Host your simple Web Application on MongoDB Stitch
-In this section, you will deploy/host a simple web application on MongoDB Stitch. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles) or as a Zip file on [Google Drive](https://drive.google.com/file/d/1CzKfHdR0rwH1PO8jHKppQhDMaLTHgJC-/view?usp=sharing). 
+## 3. Build and Host your simple Web Application on MongoDB Realm
+In this section, you will deploy/host a simple web application on MongoDB Realm. The web application is made up of three files; `index.html`, `index.css` and `app.js`. Sample files are provided in the [sampleFiles folder](./sampleFiles) or as a Zip file on [Google Drive](https://drive.google.com/file/d/13RqMz7nm-vPVBSZqqDfpxCL3-c0C3aGE/view?usp=sharing). 
 
 These files **create a simple website which shows a list of movies** (including some detailed movie information) which is retrieved through the GraphQL endpoint you deployed in step 2. 
 
@@ -70,7 +70,7 @@ If you were using a RESTful API which wasn't already configured to return the `r
 
 *I wonder how many lines of code you'll need to change to get this working...*
 
-If you're comfortable reading a javascript file, open the `app.js` file you downloaded in step 3 and see if you can work out what you need to do, don't forget to re-upload your updated work to Stitch (and flush the CDN) in order to test if you've got it right! *(hint: the explanations of each code block in step 3 will probably be useful)*
+If you're comfortable reading a javascript file, open the `app.js` file you downloaded in step 3 and see if you can work out what you need to do, don't forget to re-upload your updated work to Realm (and flush the CDN) in order to test if you've got it right! *(hint: the explanations of each code block in step 3 will probably be useful)*
 
 If you're not so confident and want to follow a guide for this step as well you'll find it here: 
 
@@ -80,12 +80,12 @@ If you're not so confident and want to follow a guide for this step as well you'
 All of the following links are also described above in each step, they are included here as a summary of the subpages in this repo:
 
 1. [Set up your MongoDB Atlas Cluster](docs/01-mongodb-atlas.md)
-2. [Configure MongoDB Stitch for GraphQL](docs/02-mongodb-stitch-graphql.md)
+2. [Configure MongoDB Realm for GraphQL](docs/02-mongodb-realm-graphql.md)
 3. [Deploy Sample Code](docs/03-deploy-sample.md)
 4. [Change the front-end](docs/04-changing-requirements.md)
 
 # Ideas for Extra Credit
-1. Integrate 3rd party authentication ([MongoDB Stitch Docs](https://docs.mongodb.com/stitch/authentication/providers/))
+1. Integrate 3rd party authentication ([MongoDB Realm Docs](https://docs.mongodb.com/realm/authentication/providers/))
 2. Create a filter to show movies by year (e.g. if we were returning lists of movies)
 3. Integrate MongoDB Atlas Search and create a search screen
 4. Add movie image/poster to each of the listed movies
@@ -97,15 +97,15 @@ All of the following links are also described above in each step, they are inclu
 The following links are to external pages which contain further reading and resources for some of the key topics covered in this lab:
 
 ## Additional Hands-on Exercises
-* [Introduction to GraphQL on MongoDB Atlas and MongoDB Stitch](https://developer.mongodb.com/how-to/graphql-support-atlas-stitch)
-* [Build a simple To-Do app using MongoDB Stitch and GraphQL](https://github.com/mongodb-appeng/taskit)
-* [Build a simple image posting app using MongoDB Stitch and GraphQL](https://github.com/JoeKarlsson/mongodb-graphql-demo)
+* [Introduction to GraphQL on MongoDB Atlas and MongoDB Realm](https://developer.mongodb.com/how-to/graphql-support-atlas-realm)
+* [Build a simple To-Do app using MongoDB Realm and GraphQL](https://github.com/mongodb-appeng/taskit)
+* [Build a simple image posting app using MongoDB Realm and GraphQL](https://github.com/JoeKarlsson/mongodb-graphql-demo)
     * [Joe Karlsson explaining GraphQL and this app in particular](https://www.youtube.com/watch?v=XsD2ZKqMbgo)
 
 ## MongoDB Docs
 * [MongoDB Atlas](https://docs.atlas.mongodb.com/)
-* [MongoDB Stitch](https://docs.mongodb.com/stitch/)
-* [GraphQL on MongoDB Stitch](https://docs.mongodb.com/stitch/graphql/)
+* [MongoDB Realm](https://docs.mongodb.com/realm/)
+* [GraphQL on MongoDB Realm](https://docs.mongodb.com/realm/graphql/)
 
 ## GraphQL Docs
 * [GraphQL Spec](http://spec.graphql.org/)

@@ -1,7 +1,7 @@
 Return to the home of this repository [here](../readme.md).
 
 # Explanation of Sample Files
-In this section, we will deploy a simple web application to Stitch using the Stitch Hosting feature. The web application is made up of three files; `index.html`, `index.css` and `app.js`. The sample files are provided in the [sampleFiles folder](../sampleFiles). 
+In this section, we will deploy a simple web application to Realm using the Realm Hosting feature. The web application is made up of three files; `index.html`, `index.css` and `app.js`. The sample files are provided in the [sampleFiles folder](../sampleFiles). 
 
 
 ## index.html
@@ -27,7 +27,7 @@ This file ([app.js](../sampleFiles/app.js)) is the JavaScript file which is refe
 **Review the file in detail**, it is heavily commented to explain the application logic. It follows this rough flow:
 1. Declare some basic variables
 2. Call a getMovies function
-3. Anonymously Authenticates with Stitch
+3. Anonymously Authenticates with Realm
 4. Queries the GraphQL endpoint using the app_id and query defined in 1 and the Access Token retrieved in 3
 5. Calls addToList for each movie returned by the end point
 6. Generates formatted HTML for each movie and updates the web page to show it
@@ -47,9 +47,9 @@ You need to download each of these files, which can be achieved by either;
 * Downloading and extracting a zip file hosted on Google Drive: [mongodb-graphql-lab-samplefiles.zip](https://drive.google.com/file/d/1CzKfHdR0rwH1PO8jHKppQhDMaLTHgJC-/view?usp=sharing) (the download button is in the top right)
 
 ## Updating your app_id
-The app_id in the `app.js` file currently has a placeholder value, but this needs to be updated with your Stitch App ID in order to have it use the GraphQL endpoint you created earlier. 
+The app_id in the `app.js` file currently has a placeholder value, but this needs to be updated with your Realm App ID in order to have it use the GraphQL endpoint you created earlier. 
 
-Open your browser to MongoDB Stitch again, see in the top left hand area a box called `APP ID`. Copy this value.
+Open your browser to MongoDB Realm again, see in the top left hand area a box called `APP ID`. Copy this value.
 > <img src="./images/03-deploy-sample/deploy-1.png" height="300">
 
 Now we need to add the ID to your JavaScript app. Open the `app.js` file using a text editor, and update the second line. It should look like this (but with your application id):
@@ -58,8 +58,8 @@ const app_id = 'movies-graphql-sdfae';
 ```
 ***Note:** The id is a combination of the application name you defined earlier, and a unique string, so if you didn't use the applicatino name `movies-graphql` then that won't be part of your App ID.*
 
-## Hosting your Web Application on Stitch
-Now we need to host this web application on Stitch so that it's accesible over the internet. Return to Stitch in your browser and complete the following steps.
+## Hosting your Web Application on Realm
+Now we need to host this web application on Realm so that it's accesible over the internet. Return to Realm in your browser and complete the following steps.
 
 Navigate back to the Hosting section by clicking `Hosting` in the left hand navigation menu.
 
@@ -84,6 +84,6 @@ You should see a page that looks a bit like this:
 If you don't then it might be worth opening up developer tools in your browser to see what errors are being logged.
 
 ---
-**Congratulations** - you've deployed your first Web App to MongoDB Stitch, leveraging the GraphQL endpoint you created earlier. 
+**Congratulations** - you've deployed your first Web App to MongoDB Realm, leveraging the GraphQL endpoint you created earlier. 
 
 Return back to the [home page](../readme.md) to proceed to the next step.
